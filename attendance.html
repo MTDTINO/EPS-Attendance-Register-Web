@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Roboto Slab', serif;
+        }
+        
+        .login-form {
+            padding-top: 10px;
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            background-color: #fff;
+            padding: 20px;
+            width: 350px; /* Adjust the width as desired */
+            display: flex; /* Use flexbox */
+            flex-direction: column; /* Arrange elements vertically */
+            align-items: center; /* Center align items horizontally */
+        }
+
+        span {
+            display: flex; /* Use flexbox */
+            align-items: center; /* Center align items horizontally */
+            justify-content: center; /* Center align items vertically */
+        }
+        
+        input[type="text"] {
+            width: 300px;
+            height: 20px; /* Adjust the height as desired */
+            padding: 5px;
+            font-size: 16px;
+            margin-bottom: 15px;
+            font-family: 'Roboto Slab', serif;
+        }
+
+        input[type="password"] {
+            width: 300px;
+            height: 20px; /* Adjust the height as desired */
+            padding: 5px;
+            font-size: 16px;
+            margin-bottom: 15px;
+            font-family: 'Roboto Slab', serif;
+        }
+
+        input[type="submit"] {
+            width: 200px;
+            height: 100%; /* Adjust the height as desired */
+            padding: 5px;
+            font-size: 16px;
+            background-color: black;
+            color: white;
+           border: none;
+           box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+           font-family: 'Roboto Slab', serif;
+        }
+        button[type="button"] {
+            width: 200px;
+            height: 100%; /* Adjust the height as desired */
+            padding: 5px;
+            font-size: 16px;    
+            background-color: red;
+            color: white;
+            border: none;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            font-family: 'Roboto Slab', serif;
+        }
+        img{
+            margin-bottom: 15px;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-form">
+        <form>
+            <div class= "heading">
+                <h2>EPS Attendance Register<h2>
+            </div>
+            <span>
+            <img src= "C:\Users\Tino\Pictures\1077114.png" width="8%" height="8%" alt="" title="" class="user_image" alt="User Icon" class="icon">
+            <input type="text" id="username" name="username" placeholder="username"><br><br>
+            </span>
+
+            <span>
+            <img src= "C:\Users\Tino\Pictures\63432.png" width="8%" height="8%" alt="" title="" class="key_image" alt="User Icon" class="icon">
+            <input type="password" id="password" name="password" placeholder="password"><br><br>
+            </span>
+            <input type="submit" value="Login"><br><br>
+            
+            <button type="button">Register</button><br><br>
+            
+            <a href="#">Forgot Password</a>
+        </form>
+    </div>
+</body>
+</html>
