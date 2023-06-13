@@ -25,7 +25,7 @@
         max-height: 450px;
         margin: 0 auto; /* Center the container horizontally */
       }
-      .container-m {
+      .container-m-timein {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -35,6 +35,27 @@
         width: 400px; /* Adjust the width as needed */
         max-height: 450px;
         margin: 0 auto; /* Center the container horizontally */
+       
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top:20px;
+        margin-bottom:10px;
+      }
+
+      .container-m-timeout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        width: 400px; /* Adjust the width as needed */
+        max-height: 450px;
+        margin: 0 auto; /* Center the container horizontally */
+        
+        margin-bottom: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
       }
       .clock {
         width: 250px;
@@ -107,12 +128,17 @@
       }
 
       @media screen and (min-width: 481px) {
-      .container-m {
+      .container-m-timein,.container-m-timeout {
       display: none;
         }
       }
      
-      
+      .parent-container{
+        display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+      }
     </style>
     <script>
     function updateTime() {
@@ -184,8 +210,8 @@
         <button class="sign-in-button">Sign Out</button>
     </div>
 
-
-    <div class="container-m">
+<div class="parent-container">
+    <div class="container-m-timein">
         <div class= "heading">
             <h2>Time In<h2>
         </div>
@@ -198,7 +224,7 @@
       <button class="sign-in-button">Sign In</button>
     </div>
     
-    <div class="container-m">
+    <div class="container-m-timeout">
       <div class= "heading">
           <h2>Time Out<h2>
       </div>
@@ -209,7 +235,7 @@
         <div class="second-hand"></div>
       </div>
       <button class="sign-in-button">Sign Out</button>
-
+  </div>
 <div> 
   </body>
   </html>
